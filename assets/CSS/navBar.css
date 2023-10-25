@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+nav{
+    max-height: 100px;
+    padding: 1rem;
+    background-color: #fbf7e3;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    width: 100%;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3df85;
+    border-radius: 50px;
+    width: 15%;
+    font-size: .8rem;
+    margin: 14px 0;
+    font-weight: bold;
+    color: #612406;
+    flex-grow: 1;
+}
+.shop{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f3df85;
+    border-radius: 50px;
+    width: 23%;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #612406;
+}
+.shop > img{
+    width: 45px;
+}

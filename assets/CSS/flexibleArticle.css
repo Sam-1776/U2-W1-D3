@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+article{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fbf7e3;
+    border-radius: 20px;
+    flex-shrink: 99;
+}
+
+.text{
+   display: flex;
+   flex-direction: column;
+   flex-basis: 300px;
+   flex-grow: 90;
+}
+.img{
+    display: flex;
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: 1rem;
+}
+.img > img{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .img{
+        flex-basis: 300px;
+    }
+    .text{
+        flex-basis: 200px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    article{
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+    .text{
+        order: 1;
+        justify-content: center;
+        flex-basis: 150px;
+        margin: 1rem;
+
+    
+    }
+    .img{
+        order: 2;
+        flex-basis: 150px;
+    }
+}
