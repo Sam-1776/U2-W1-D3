@@ -1,6 +1,21 @@
+@media screen and (max-width: 576px) {
+    nav{
+        flex-wrap: wrap; 
+    }
+    .shop{
+        order: -1;
+        width: 70%;
+    }
+    .item{
+        width: 40%;
+    }
+}
+
+
 @media screen and (min-width: 576px) and (max-width: 768px) {
     nav{
         border-radius: 0;
+        max-height: 100px;
     }
     .shop{
         font-size: 1.5rem;

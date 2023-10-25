@@ -16,7 +16,6 @@ main{
 
 }
 nav{
-    max-height: 100px;
     padding: 1rem;
     background-color: #fbf7e3;
     display: flex;
